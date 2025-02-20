@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "easy-pickup-filter",
+	"version": "${version}",
+	"name": "Easy Pickup Filter",
+	"description": "This mod allows you to easily restrict some items from being automatically picked up!",
+	"authors": [
+		"aquastones"
+	],
+	"contact": {
+		"homepage": "https://github.com/aquastones",
+		"sources": "https://github.com/aquastones/easy-pickup-filter"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/easy-pickup-filter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "com.aquastones.easypickupfilter.EasyPickupFilter"
+		],
+		"fabric-datagen": [
+			"com.aquastones.easypickupfilter.EasyPickupFilterDataGenerator"
+		],
+		"client": [
+			"com.aquastones.easypickupfilter.EasyPickupFilterClient"
+		]
+	},
+	"mixins": [
+		"easy-pickup-filter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
